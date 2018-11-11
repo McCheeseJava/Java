@@ -7,7 +7,8 @@ public class VocabularyDensity
   public static void main(String[] args) throws IOException
   {
     final int CAPACITY = 1000;   // capacity of collection
-    String fname = "C:\\Temp\\GCF\\src\\collections\\ArrayCollection.java";      // input file of text
+    String fname = "/Users/anassiry/eclipse-workspace/JavaPracticesNov2018/src/collections/ArrayCollection.java";
+    // input file of text
     String word;                 // current word
     int numWords = 0;            // total number of words
     int uniqWords;               // number of unique words
