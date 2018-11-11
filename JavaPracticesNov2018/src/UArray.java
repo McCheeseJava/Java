@@ -19,7 +19,6 @@ public class UArray {
         {
             c[i] = a[i];
         }
-        for (int i = 0; i<b.length; i++)
             
     }
     
