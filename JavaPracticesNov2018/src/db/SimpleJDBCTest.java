@@ -1,4 +1,4 @@
-package DB;
+package db;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;
