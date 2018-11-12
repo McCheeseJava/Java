@@ -11,7 +11,7 @@ public class ExampleRunnable implements Runnable {
 	//method parameters are always thread safe
 	//local variables are thread safe
 	
-	public  void print(int i) { 
+	public synchronized void print(int i) { 
 			try {
 				//System.out.println(i instanceof Object);
 				Thread.sleep(1000);
@@ -28,7 +28,6 @@ public class ExampleRunnable implements Runnable {
 
 	public static void main(String[] args) {
 		ExampleRunnable r1 = new ExampleRunnable();
-
 		Thread t1 = new Thread(r1);
 		Thread t2 = new Thread(r1);
 		Thread t3 = new Thread(r1);
