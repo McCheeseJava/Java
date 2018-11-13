@@ -1,3 +1,4 @@
+package collections3;
 import java.util.*;
 
 class Test

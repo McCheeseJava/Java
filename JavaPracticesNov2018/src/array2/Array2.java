@@ -5,6 +5,7 @@ public class Array2
 	{
 		char data[] = new char[6];
 		data[0] = 'a';
+		System.out.println(data[0]);
 	}
 
 }

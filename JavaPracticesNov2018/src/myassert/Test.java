@@ -1,3 +1,4 @@
+package myassert;
 class LocalClass 
 {
 	static void f (int x)
@@ -11,7 +12,7 @@ public class Test
 {
 	public static void main(String args[])
 	{
-		LocalClass.f(59);
+		LocalClass.f(-59);
 	}
 
 }

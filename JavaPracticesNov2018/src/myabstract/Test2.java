@@ -1,4 +1,4 @@
-package abstract2;
+package myabstract;
 public class Test2 extends Test
 {
 	public String funcS (String s)

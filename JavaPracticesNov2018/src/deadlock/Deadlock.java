@@ -1,3 +1,4 @@
+package deadlock;
 public class Deadlock {
     static class Friend {
         private final String name;

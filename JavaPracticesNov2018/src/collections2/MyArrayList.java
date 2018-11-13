@@ -1,9 +1,10 @@
+package collections2;
 import java.util.*;
 
 
 public class MyArrayList {
 
-	ArrayList <String> a = new ArrayList <String>();
+	ArrayList <String> a = new ArrayList <>();
 
 	public void testArrayList(){
 		a.add("Haroon");

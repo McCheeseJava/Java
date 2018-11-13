@@ -1,11 +1,10 @@
+package casting;
 public class Parent {
      public Parent doStuff(int z)
      {
 		 return this;
 	 }
  }
-
-
 
  class Child extends Parent {
 

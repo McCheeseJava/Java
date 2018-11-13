@@ -1,3 +1,4 @@
+package collections2;
 import java.util.*;
 public class Test
 {
@@ -5,9 +6,9 @@ public class Test
 	{
 		ArrayList a = new ArrayList(); 
 
-		for (int i=0; i < a.length; i++)
+		for (int i=0; i < 5; i++)
 		{
-			System.out.println(a[i]);
+			System.out.println(a);
 		}
 	}
 
