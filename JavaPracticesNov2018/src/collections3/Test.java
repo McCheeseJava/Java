@@ -12,7 +12,7 @@ class Test
                 hmap.put(a[0], b[0]);
 
                 System.out.println( hmap.get(a[0]) );
-
+                System.out.println( hmap );
 
         }
 
