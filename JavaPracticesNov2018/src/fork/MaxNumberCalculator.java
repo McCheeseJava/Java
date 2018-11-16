@@ -2,10 +2,6 @@ package fork;
 
 import java.util.concurrent.RecursiveTask;
 
-/**
- * @author ashraf
- *
- */
 @SuppressWarnings("serial")
 public class MaxNumberCalculator extends RecursiveTask {
 
