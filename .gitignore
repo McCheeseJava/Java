@@ -1,10 +1,9 @@
-.class
-.recommenders
+/JavaPracticesNov2018/.recommenders
 .DS_Store
 .settings
-/bin
-.classpath
-.project
-/.metadata/
+/JavaPracticesNov2018/bin
+/JavaPracticesNov2018/.classpath
+/JavaPracticesNov2018/.project
+/JavaPracticesNov2018/.metadata/
 /JavaPracticesNov2018/nbproject/private/
 /JavaPracticesNov2018/build/
