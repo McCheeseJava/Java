@@ -1,4 +1,4 @@
-package packagetest1;
+package packagetest2;
 import employeetest.EmployeeTest;
 /**
  * This program demonstrates the use of packages.
@@ -16,6 +16,6 @@ public class PackageTest
       harry.raiseSalary(5);
 
       // because of the static import statement, we don't have to use System.out here
-      out.println("name=" + harry.getName() + ",salary=" + harry.getSalary());
+      System.out.println("name=" + harry.getName() + ",salary=" + harry.getSalary());
    }
 }

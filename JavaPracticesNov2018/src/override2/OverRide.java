@@ -1,5 +1,6 @@
- class Abc {
-   private Abc(){}
+package override2;
+class Abc {
+//   private Abc(){}
    public String snippet() {
     return "snippet 1";
  }
