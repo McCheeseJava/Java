@@ -1,3 +1,4 @@
+package threading2Stack;
 public class Consumer implements Runnable
 {
 	private MyStack popObj;

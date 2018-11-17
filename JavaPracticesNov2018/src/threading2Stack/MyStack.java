@@ -1,3 +1,4 @@
+package threading2Stack;
 public class MyStack
 {
 	public static final int MAX = 10; 
