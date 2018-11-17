@@ -1,3 +1,4 @@
+package testjre;
 public class TestJRE
 {
 	public static void main(String[] args)

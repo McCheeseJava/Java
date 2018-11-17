@@ -16,10 +16,10 @@ public class Problem5 {
         int dirCounter = 0;
         try {
 
-            BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\admin\\Documents\\NetBeans_Projects\\Algo\\src\\salesforce\\prog5.dat"));
+            BufferedReader in = new BufferedReader(new FileReader("/Users/anassiry/eclipse-workspace/JavaPracticesNov2018/src/practice/prog5.dat"));
             String line;
             line = in.readLine();
-            writer = new FileWriter("C:\\Users\\admin\\Documents\\NetBeans_Projects\\Algo\\src\\salesforce\\prog5.out");
+            writer = new FileWriter("/Users/anassiry/eclipse-workspace/JavaPracticesNov2018/src/practice/prog5.out");
             out = new PrintWriter(writer);
             out.println("Problem 5 by team X");
 

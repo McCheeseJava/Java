@@ -1,3 +1,4 @@
+package overloaded;
 public class Test
 {
 	public int func(String a, double b)
@@ -6,10 +7,10 @@ public class Test
 		return 1;
 	}
 
-	public String func(String c, double b)
+	public int func(Double c, double b)
 	{
 		System.out.println("fucn 2 ");
-		return "2";
+		return 2;
 	}
 
 
@@ -17,6 +18,7 @@ public class Test
         {
                 Test o = new Test();
                 int i =  o.func("haroon", 5.5);
+                int j = o.func(Double.valueOf(5.5), 5.5);
         }
 
 }

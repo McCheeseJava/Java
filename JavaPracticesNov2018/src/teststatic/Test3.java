@@ -1,6 +1,7 @@
+package teststatic;
 //a non static method can access a static variable
 
-public class Test
+public class Test3
 {
 	private static int x = 5;
 
