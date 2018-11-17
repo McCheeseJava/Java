@@ -4,7 +4,7 @@ package string;
 final class k {}
 
 class Message {
-     MyString2 msg = "Happy New Year!";
+	String msg = "Happy New Year!";
  
      public void print() {
          System.out.println(msg);
@@ -17,7 +17,7 @@ public class Test {
          m.msg = "Happy Holidays!";
      }
  
-     public static void main(MyString2[] args) {
+     public static void main(String[] args) {
          Message obj = new Message();
          obj.print();
          change(obj);

@@ -16,8 +16,8 @@ public class MyString {
     /**
      * @param args the command line arguments
      */
-    public static void main(MyString2[] args) {
-        MyString2 a = "Hello";
+    public static void main(String[] args) {
+    	String a = "Hello";
         System.out.println (a.substring(0, 3) );
         
         Scanner in = new Scanner(System.in);

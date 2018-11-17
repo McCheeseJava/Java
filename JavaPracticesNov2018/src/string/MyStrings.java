@@ -1,10 +1,10 @@
 package string;
 public class MyStrings
 {
-	public static void main (MyString2 args[])
+	public static void main (String args[])
 	{
-		MyString2 arr = new MyString2("hi");
-		MyString2 att = new MyString2("hi");
+		String arr = new String("hi");
+		String att = new String("hi");
 
 		System.out.println(arr);
 
