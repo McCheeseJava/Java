@@ -26,7 +26,9 @@ public class MyDate
 		//now.print();
 
 		Date  today = new Date();
-		System.out.println(today.toString());
+		System.out.println(today);
+		System.out.println(now);
+
 	}
 
 }
