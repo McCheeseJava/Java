@@ -1,4 +1,4 @@
-
+package quickfind;
 import java.util.Scanner;
 
 public class QuickFindUF {
