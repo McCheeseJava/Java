@@ -1,3 +1,4 @@
+package trains;
 //Author : Sree Lakshmi
 //Date: 07/08/2002
 
@@ -616,7 +617,7 @@ class Route {
    		   			    if( sRoute.charAt(i) == 32 )
    		   				{
    		   			      System.out.println("Route String cannot contain embedded blanks");
-   		   				  return false;;
+   		   				  return false;
    		   				}
    		   	     }
    		   		 System.out.println("Enter a valid alphanumeric string for the route");

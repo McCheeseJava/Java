@@ -1,3 +1,4 @@
+package timee;
 public class Time {
 
   private int hr;

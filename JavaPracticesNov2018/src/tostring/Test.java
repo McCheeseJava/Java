@@ -1,3 +1,4 @@
+package tostring;
 public class Test{
 
 	public String toString(){

@@ -7,8 +7,12 @@ public class Test2
 		ArrayList <String> a = new ArrayList<String>();
 		a.add("tom");
 		a.add("paul");
+		
+		a.clear();
 
-		System.out.println(a.get(1));
+		System.out.println(a);
+        System.out.println(a.get(1));
+
 
 
 	}
