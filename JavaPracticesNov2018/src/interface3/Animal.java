@@ -1,4 +1,4 @@
-package Interface;
+package interface3;
 public class Animal
 {
 	public void sleep()

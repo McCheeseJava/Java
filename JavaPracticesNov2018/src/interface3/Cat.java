@@ -1,4 +1,4 @@
-package Interface;
+package interface3;
 public class Cat extends Animal implements Pet
 {
 	public void eat()

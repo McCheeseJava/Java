@@ -1,4 +1,4 @@
-package Interface;
+package interface3;
 interface Num {
     int getSum(int x);
   }

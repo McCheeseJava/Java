@@ -1,4 +1,4 @@
-package Interface;
+package interface3;
 public class Point implements Shape, Color
 {
 	public double area()
