@@ -1,0 +1,31 @@
+Problem 5 by team X
+Command: dir
+Directory of root: /Users/anassiry/eclipse-workspace/JavaPracticesNov2018
+No Subdirectories
+Command: mkdir sub6
+Command: mkdir sub3
+Command: mkdir sub4
+Command: dir
+Directory of root: /Users/anassiry/eclipse-workspace/JavaPracticesNov2018
+sub6 sub3 sub4 
+Command: mkdir sub4
+Subdirectory already exists
+Command: cd sub3
+Command: cd sub3
+Command: mkdir sub3
+Subdirectory already exists
+Command: mkdir sub6
+Subdirectory already exists
+Command: mkdir sub4
+Subdirectory already exists
+Command: dir
+Directory of root: /Users/anassiry/eclipse-workspace/JavaPracticesNov2018
+sub6 sub3 sub4 
+Command: cd sub6
+Command: mkdir sub666
+Command: dir
+Directory of root: /Users/anassiry/eclipse-workspace/JavaPracticesNov2018
+sub6 sub3 sub4 sub666 
+Command: dir
+Directory of root: /Users/anassiry/eclipse-workspace/JavaPracticesNov2018
+sub6 sub3 sub4 sub666 
