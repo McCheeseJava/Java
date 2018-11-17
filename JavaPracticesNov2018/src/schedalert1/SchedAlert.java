@@ -1,3 +1,4 @@
+package schedalert1;
 /*
  * Main.java
  *

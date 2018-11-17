@@ -1,3 +1,4 @@
+package schedalert2;
 /*
  * SchedAlertDaemon.java
  *
@@ -18,13 +19,9 @@ public class SchedAlertDaemon
 {
 
     private String arr[];
-    //private File fileName;
+    private File fileName;
     private Date now = new Date();
 
-   Locale currentLocale = new Locale("en");
-DateFormat dateFormatter = DateFormat.getDateInstance(DateFormat.DEFAULT, currentLocale);
-Date date = new Date();
-   String fileName = dateFormatter.format(date);
 
 
     /** Creates a new instance of SchedAlertDaemon */
@@ -33,12 +30,13 @@ Date date = new Date();
 
      public void readEngineersFromFile()
      {
-		 String emailSubjectTxt = "a friendly reminder: LT/GK starting in 10 minutes";
-		 String emailMsgTxt     = "This is an automated email. Please do not respond to this sender.\nThis is just a friendly reminder that your lt/gk is starting in 10 minutes.\n\nRegards,\nJavaApps";
+		 String emailSubjectTxt = "a friendly reminder: your LT starting in 10 minutes";
+		 String emailMsgTxt     = "This is an automated email. Please do not respond to this sender.\nThis is just a friendly reminder to please log in to LT in 10 minutes.\n\nRegards,\nJavaApps";
 		 String emailFromAddress= "LTAlertDaemon@Sun.COM";
 		 String time;
 		 SendMailUsingAuthentication smtpMailSender = new SendMailUsingAuthentication();
 
+         fileName = CreateFile.getFileName();
          System.out.println("Reading file: " + fileName);
 
          try
@@ -116,15 +114,6 @@ Date date = new Date();
 
 
      }
-
-
-     public static void main(String args[])
-     {
-     	SchedAlertDaemon daemon = new SchedAlertDaemon();
-        daemon.readEngineersFromFile();
-
-      }
-
 
 
 
