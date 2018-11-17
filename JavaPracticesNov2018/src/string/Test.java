@@ -1,4 +1,4 @@
-package string2;
+package string;
 
 
 final class k {}

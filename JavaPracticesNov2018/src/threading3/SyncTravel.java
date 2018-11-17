@@ -1,3 +1,4 @@
+package threading3;
 import java.util.*;
 
 public class SyncTravel

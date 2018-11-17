@@ -95,7 +95,7 @@ MessagingException
     {
         addressTo[i] = new InternetAddress(recipients[i]);
     }
-    msg.setRecipients(Message.RecipientType.TO, addressTo);
+    msg.setRecipients(string.TO, addressTo);
 
 
     // Setting the Subject and Content Type

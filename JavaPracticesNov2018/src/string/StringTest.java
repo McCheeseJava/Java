@@ -1,4 +1,4 @@
-package string2;
+package string;
 
 import java.time.*;
 import java.util.ArrayList;

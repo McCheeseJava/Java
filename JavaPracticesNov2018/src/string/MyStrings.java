@@ -1,3 +1,4 @@
+package string;
 public class MyStrings
 {
 	public static void main (String args[])

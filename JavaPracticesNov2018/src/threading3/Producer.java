@@ -1,3 +1,4 @@
+package threading3;
 public class Producer implements Runnable
 {
 	private SyncTravel obj = new SyncTravel();

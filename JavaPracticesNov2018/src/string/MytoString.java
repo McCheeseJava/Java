@@ -1,3 +1,4 @@
+package string;
 public class MytoString
 {
 	public static void main(String args[])

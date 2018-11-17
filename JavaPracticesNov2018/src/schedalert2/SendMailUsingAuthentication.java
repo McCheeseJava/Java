@@ -79,7 +79,7 @@ public class SendMailUsingAuthentication
 
     InternetAddress addressTo = new InternetAddress(recipient);
 
-    msg.setRecipient(Message.RecipientType.TO, addressTo);
+    msg.setRecipient(string.TO, addressTo);
 
 
     // Setting the Subject and Content Type

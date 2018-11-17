@@ -1,3 +1,4 @@
+package threading3;
 public class Consumer implements Runnable
 {
 	private SyncTravel obj2 = new SyncTravel();
