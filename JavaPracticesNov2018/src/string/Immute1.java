@@ -1,5 +1,5 @@
 package string;
-public class Immute
+public class Immute1
 {
 	public static void main(String args[])
 	{
@@ -7,13 +7,12 @@ public class Immute
 		String t = new String("bye");
 		String u = new String("what");
 
-		//u = t.concat( t.toUpperCase() );
+		u = t.concat( t.toUpperCase() );
 
 		s = "give me a break";
 
 		System.out.println(s + t + u);
 
-		System.out.println(  );
 	}
 
 }

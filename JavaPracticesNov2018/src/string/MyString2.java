@@ -1,7 +1,7 @@
 package string;
 import java.*;
 
-public class String
+public class MyString2
 {
 	public static void main(String args[])
 	{

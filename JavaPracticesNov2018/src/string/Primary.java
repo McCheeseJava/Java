@@ -10,14 +10,14 @@ public class Primary {
 	double d;
 	float f;
 
-	public static void main(String[] args) {
+	public static void main(MyString2[] args) {
 
 		Primary obj = new Primary();
 		System.out.println(">" + obj.c);
 		System.out.println(">" + obj.d);
 		System.out.println(">" + obj.f);
 		
-		List<String> list = new ArrayList<>(); 
+		List<MyString2> list = new ArrayList<>(); 
 		
 
 

@@ -1,7 +1,7 @@
 package string;
 public class MytoString
 {
-	public static void main(String args[])
+	public static void main(MyString2 args[])
 	{
 		MytoString a = new MytoString();
 		System.out.println(a);
