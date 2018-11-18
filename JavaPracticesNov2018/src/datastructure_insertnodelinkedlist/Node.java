@@ -1,6 +1,6 @@
 package datastructure_insertnodelinkedlist;
-
 public class Node {
+	
 	private Node head;
 	private Node next;
 	private int data;
@@ -13,12 +13,13 @@ public class Node {
 	public Node() {
 	}
 
-	public void sortedInsert(Node new_node) {
+	public void insert(Node new_node) {
 		Node current;
 		if (head == null || head.data >= new_node.data) {
 			new_node.next = head;
 			head = new_node;
-		} else {
+		} 
+		else {
 			current = head;
 			while (current.next != null && current.next.data < new_node.data)
 				current = current.next;
@@ -27,13 +28,13 @@ public class Node {
 		}
 	}
 
-	Node newNode(int data) 
+	public Node newNode(int data) 
     { 
        Node x = new Node(data); 
        return x; 
     } 
   
-     void printList() 
+     public void printList() 
      { 
          Node temp = head; 
          while (temp != null) 
@@ -45,21 +46,30 @@ public class Node {
      
      public static void main(String args[]) 
      { 
-         Node llist = new Node(); 
+         Node list = new Node(); 
          Node new_node; 
-         new_node = llist.newNode(5); 
-         llist.sortedInsert(new_node); 
-         new_node = llist.newNode(10); 
-         llist.sortedInsert(new_node); 
-         new_node = llist.newNode(7); 
-         llist.sortedInsert(new_node); 
-         new_node = llist.newNode(3); 
-         llist.sortedInsert(new_node); 
-         new_node = llist.newNode(1); 
-         llist.sortedInsert(new_node); 
-         new_node = llist.newNode(9); 
-         llist.sortedInsert(new_node); 
-         System.out.println("Created Linked List"); 
-         llist.printList(); 
+         
+         new_node = list.newNode(5); 
+         list.insert(new_node);
+         
+         new_node = list.newNode(10); 
+         list.insert(new_node); 
+         
+         new_node = list.newNode(7); 
+         list.insert(new_node); 
+         
+         new_node = list.newNode(3); 
+         list.insert(new_node); 
+         
+         new_node = list.newNode(1); 
+         list.insert(new_node); 
+         
+         new_node = list.newNode(9); 
+         list.insert(new_node); 
+         
+         new_node = list.newNode(18); 
+         list.insert(new_node);
+         
+         list.printList(); 
      } 
 }
