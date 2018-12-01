@@ -8,10 +8,11 @@ public class MT implements Runnable
 		i = 5;
 	}
 
+	@Override
 	public void run()
 	{
 		i++;
-		i--;
+		//i--;
 		System.out.println("value of i is: " + i);
 
 	}

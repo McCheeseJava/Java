@@ -1,11 +1,12 @@
 package threading2;
 class X {
    static class Worker extends java.lang.Thread {
-     public void run() {
+     @Override
+	public void run() {
        synchronized(this) {
          try {
-         notify();
-           wait();
+         notify(); //i'm done you guys do your work now
+           wait(); //i'm waiting for execution time notify me when you're done
          } catch (Exception e) {}
        }
     }

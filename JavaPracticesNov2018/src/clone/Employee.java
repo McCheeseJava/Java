@@ -16,14 +16,10 @@ public class Employee implements Cloneable
       hireDay = new Date();
    }
 
+   @Override
    public Employee clone() throws CloneNotSupportedException
    {
-      // call Object.clone()
       Employee cloned = (Employee) super.clone();
-
-      // clone mutable fields
-      cloned.hireDay = (Date) hireDay.clone();
-
       return cloned;
    }
 
@@ -47,7 +43,8 @@ public class Employee implements Cloneable
       salary += raise;
    }
 
-   public String toString()
+   @Override
+public String toString()
    {
       return "Employee[name=" + name + ",salary=" + salary + ",hireDay=" + hireDay + "]";
    }

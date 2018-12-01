@@ -14,17 +14,26 @@ public class Node {
 	}
 
 	public void insert(Node new_node) {
-		Node current;
+		System.out.println("new_node: " + new_node.data);
+        Node current;
 		if (head == null || head.data >= new_node.data) {
 			new_node.next = head;
 			head = new_node;
 		} 
 		else {
 			current = head;
+			System.out.println("current: " + current.data);
+			System.out.println("head: " + head.data);
+
 			while (current.next != null && current.next.data < new_node.data)
 				current = current.next;
+		    	System.out.println("current: " + current.data);
+		    	
 		    	new_node.next = current.next;
 			    current.next = new_node;
+				System.out.println("new_node: " + new_node.data);
+				
+
 		}
 	}
 

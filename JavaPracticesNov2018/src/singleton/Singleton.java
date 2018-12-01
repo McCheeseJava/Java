@@ -1,6 +1,10 @@
 package singleton;
 public class Singleton {
-    private static Singleton instance = null;
+    
+	//3
+	private static Singleton instance = null;
+    
+    //2
     public static Singleton getSingleton() {
         if (instance == null) {
         	instance = new Singleton();
@@ -13,6 +17,7 @@ public class Singleton {
         }
     }
 
+    //1
     private Singleton() {
     }   
 }
