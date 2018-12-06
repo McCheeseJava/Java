@@ -1,12 +1,11 @@
 package linkedlist;
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Solution {
     
     static Node head  = null;  //pointer to head
     private static Node start = null; //pointer to start
-    private static Node p     = null;  //poiner to current node
+    private static Node p     = null;  //pointer to current node
     private static Scanner sc = new Scanner(System.in);
     
     public static Node insert(Node head, int num) {
