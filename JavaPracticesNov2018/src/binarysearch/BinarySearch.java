@@ -25,7 +25,7 @@ public class BinarySearch {
 
 	public static void main(String args[]) {
 		int arr[] = { 1, 2, 3, 4, 5, 10, 40 };
-		int x = 10;
+		int x = 3;
 
 		int result = BinarySearch.binarySearch(arr, x);
 		if (result == -1)

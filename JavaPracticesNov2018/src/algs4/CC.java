@@ -29,7 +29,7 @@
  *
  ******************************************************************************/
 
-package edu.princeton.cs.algs4;
+package algs4;
 
 /**
  *  The {@code CC} class represents a data type for 
@@ -216,7 +216,7 @@ public class CC {
         StdOut.println(m + " components");
 
         // compute list of vertices in each connected component
-        Queue<Integer>[] components = (Queue<Integer>[]) new Queue[m];
+        Queue<Integer>[] components = new Queue[m];
         for (int i = 0; i < m; i++) {
             components[i] = new Queue<Integer>();
         }
