@@ -42,10 +42,30 @@ public class LinkedList {
 			size++;
 		}
 	}
+	
+	public void removeFirst() {
+		if (size != 0) {
+			head = head.next.next;
+			size--;
+		}
+	}
+	
+	public String largest() {
+		Node n = head;
+		int largest = 0;
+		while (n != null) {
+			if (n.data > largest) {
+				largest = n.data;
+			}
+ 			n = n.next;
+		}
+	    return largest + " ";
+
+	}
 
 	@Override
 	public String toString() {
-		Node n = head.next;
+		Node n = head;
 		String temp = "";
 		while (n != null) {
 			temp = temp + n.data + " ";
@@ -59,9 +79,11 @@ public class LinkedList {
 		a.prepend(55);
 		a.prepend(10);
 		a.prepend(33);
-		a.append(44);
+		a.prepend(44);
+		a.removeFirst();
 
 		System.out.println(a);
+		System.out.println("largest element in the list: " + a.largest());
 
 	}
 }
