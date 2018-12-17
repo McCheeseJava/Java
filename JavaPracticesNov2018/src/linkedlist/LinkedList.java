@@ -41,10 +41,9 @@ public class LinkedList {
 			while (h.next != lastNode) {
 				h = h.next;
 			}
-
-			h.next.next = n;
-			lastNode = n;
-			n.next = null;
+			h.next.next = n; //The node right before the lastNode is linked with the new node. 
+			lastNode = n;    //The new node is the lastNode.
+			n.next = null;   //lastNode is not pointing to anything.
 			size++;
 		}
 	}
@@ -61,7 +60,7 @@ public class LinkedList {
 		while (n.next != lastNode) {
 			n = n.next;
 		}
-		lastNode = n;
+		lastNode = n;  //The node right before the lastNode is the new lastNode
 		size--;
 	}
 
@@ -96,17 +95,12 @@ public class LinkedList {
 		a.append(33);
 		a.append(44);
 		a.append(55);
+		a.prepend(11);
+
 		a.removeLast();
 		a.removeFirst();
-		a.prepend(99);
-		a.removeFirst();
-		a.append(104);
-		a.prepend(8);
-		a.prepend(9);
-		a.prepend(10);
-		a.prepend(11);
+		
 		a.toString();
-
 		System.out.println("\nlargest element in the list: " + a.largest());
 
 	}
