@@ -17,6 +17,8 @@ public class TestingExecutors implements Callable /* or Runnable */ {
         }
 
     }
+    
+    //unlike run() above call() can return a value
     public String call() throws InterruptedException {
         synchronized ("Test") {
             sleep (1000);
