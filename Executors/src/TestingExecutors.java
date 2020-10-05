@@ -2,7 +2,7 @@ import java.util.concurrent.*;
 
 import static java.lang.Thread.sleep;
 
-public class TestingExecutors implements Callable{
+public class TestingExecutors implements Callable /* or Runnable */ {
 
     public void run() {
         try {
