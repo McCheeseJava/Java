@@ -30,13 +30,13 @@ public class TestingExecutors implements Callable{
         //ExecutorService service = Executors.newSingleThreadExecutor();
 
         //Create a thread pool so they can be reused
-        ExecutorService executor = Executors.newFixedThreadPool(50);
+        ExecutorService service = Executors.newFixedThreadPool(50);
         for (int i = 0; i < 10; i++){
             //new Thread(new TestingExecutors()).start();
             //service.execute(new TestingExecutors());
-            Future<String>  future = executor.submit(new TestingExecutors());
+            Future<String>  future = service.submit(new TestingExecutors());
             System.out.println("I get: " + future.get());
         }
-        executor.shutdown();
+        service.shutdown();
     }
 }
