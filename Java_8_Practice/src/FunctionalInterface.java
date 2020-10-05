@@ -1,4 +1,4 @@
-public interface Interface<E> {
+public interface FunctionalInterface<E> {
     /*public void method1() {
         System.out.println("method1");
     }*/
