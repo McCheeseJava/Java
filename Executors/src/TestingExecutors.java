@@ -26,14 +26,19 @@ public class TestingExecutors implements Callable{
     }
 
     public static void main (String args[]) throws ExecutionException, InterruptedException {
-        // Test Executors with a single thread. It will create a thread Q and threads will wait for their turn.
+        //Test Executors with a single thread. It will create a thread Q and threads will wait for their turn.
         //ExecutorService service = Executors.newSingleThreadExecutor();
 
         //Create a thread pool so they can be reused
         ExecutorService service = Executors.newFixedThreadPool(50);
+        
         for (int i = 0; i < 10; i++){
+            // create one thread at a time. This is expensive.
             //new Thread(new TestingExecutors()).start();
+            
             //service.execute(new TestingExecutors());
+            
+            //use futures so we can get return value from our call method
             Future<String>  future = service.submit(new TestingExecutors());
             System.out.println("I get: " + future.get());
         }
