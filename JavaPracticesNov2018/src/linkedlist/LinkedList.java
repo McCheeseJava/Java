@@ -1,3 +1,4 @@
+// node *n = malloc(sizeof(node));
 package linkedlist;
 
 public class LinkedList {
