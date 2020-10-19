@@ -1,3 +1,4 @@
+@FunctionalInterface
 public interface FunctionalInterface<E> {
     /*public void method1() {
         System.out.println("method1");
