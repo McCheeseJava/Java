@@ -1,7 +1,8 @@
 import java.util.*;
 import java.util.LinkedList;
+
 public class TestQueue {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Queue<String> products = new ArrayDeque<String>();
         products = new LinkedList<String>();
         products.add("p1");

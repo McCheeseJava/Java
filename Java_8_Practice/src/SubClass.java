@@ -3,6 +3,7 @@ class SuperClass {
         System.out.println("Super");
     }
 }
+
 public class SubClass extends SuperClass {
     SubClass() {
         super(5);

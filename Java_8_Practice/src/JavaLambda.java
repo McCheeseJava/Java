@@ -1,6 +1,7 @@
 import java.util.*;
+
 public class JavaLambda {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         List<Integer> items = new ArrayList<>();
         items.add(1);
         items.add(2);

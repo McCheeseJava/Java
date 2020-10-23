@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class TestClass {
     public static void main(String[] args) {
         List<String> items = new ArrayList<>();
@@ -9,7 +10,7 @@ public class TestClass {
             if (i.indexOf("P") == 0) {
                 continue;
             } else {
-                System.out.print(i+" ");
+                System.out.print(i + " ");
             }
         }
     }
