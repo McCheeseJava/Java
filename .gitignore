@@ -1,4 +1,4 @@
-/Java_8_Practice/src/UniqeString/*.class
+/Java_8_Practice/src/**/*.class
 /JavaPracticesNov2018/src/.classpath
 /JavaPracticesNov2018/src/.gitignore
 /JavaPracticesNov2018/src/.project
