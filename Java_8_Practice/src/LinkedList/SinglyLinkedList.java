@@ -20,6 +20,13 @@ public class SinglyLinkedList {
         head = newNode;
     }
 
+    public int removeFirst(){
+        Node current = head;
+        int temp = current.data;
+        head = current.next;
+        return temp;
+    }
+
     public void insertLast(int data) {
         Node newNode = new Node();
         newNode.data = data;
@@ -28,6 +35,16 @@ public class SinglyLinkedList {
             start = start.next;
         }
         start.next = newNode;
+    }
+
+    public int removeLast(){
+        Node start = head;
+        while (start.next.next != null){
+            start = start.next;
+        }
+        int temp = start.next.data;
+        start.next = null;
+        return temp;
     }
 
     public void printLinkedList() {
@@ -69,7 +86,7 @@ public class SinglyLinkedList {
         myLinkedlist.printLinkedList();
 
         System.out.println("inserting 0 at head");
-        myLinkedlist.insertFirst(0);
+        myLinkedlist.insertFirst(9);
         myLinkedlist.printLinkedList();
 
         System.out.println("inserting 1 at head");
@@ -89,7 +106,7 @@ public class SinglyLinkedList {
         myLinkedlist.printLinkedList();
 
         System.out.println("inserting 0 at end");
-        myLinkedlist.insertLast(0);
+        myLinkedlist.insertLast(3);
         myLinkedlist.printLinkedList();
 
         System.out.println("inserting 4 at head");
@@ -100,8 +117,18 @@ public class SinglyLinkedList {
         myLinkedlist.insertFirst(4);
         myLinkedlist.printLinkedList();
 
-        myLinkedlist.findDups();
+        //myLinkedlist.findDups();
+        //myLinkedlist.printLinkedList();
+        System.out.println("Removing First... " + myLinkedlist.removeFirst());
         myLinkedlist.printLinkedList();
+
+        System.out.println("Removing Last..." + myLinkedlist.removeLast());
+        myLinkedlist.printLinkedList();
+
+        System.out.println("Removing Last..." + myLinkedlist.removeLast());
+        myLinkedlist.printLinkedList();
+
+
 
     }
 }
