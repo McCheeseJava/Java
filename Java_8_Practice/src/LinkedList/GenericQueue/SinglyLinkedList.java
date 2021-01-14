@@ -1,7 +1,7 @@
 import java.util.*;
 class Node<T> {
     public T data;
-    public Node<T> next;
+    public Node<T extends Number> next;
     public void displayNodeData() {
         System.out.print(data + " ");
     }
@@ -38,11 +38,11 @@ public class SinglyLinkedList<T> {
 
     public static void main(String args[])
     {       
-        SinglyLinkedList<String> myLinkedlist = new SinglyLinkedList<>();
+        SinglyLinkedList<Double> myLinkedlist = new SinglyLinkedList<>();
         SinglyLinkedList<Integer> myIntLinkedlist = new SinglyLinkedList<>();
 
         System.out.println("inserting Str at head");
-        myLinkedlist.insertFirst("Haroon");
+        myLinkedlist.insertFirst(4.5);
         myLinkedlist.printLinkedList();
 
         System.out.println("inserting Int at head");
