@@ -37,34 +37,36 @@ public class MyLinkedListDebug {
             System.out.println("From line 37 tail == " + tail);
         }
         System.out.println("From line 39 tail.next == " + tail.next);
+        //tail.next is pointing to null. Let's point it to our new node.
         tail.next = newNode;
         System.out.println("From line 41 tail.next == " + tail.next);
 
         System.out.println("From line 43 tail == " + tail);
+        //tail is pointing to previous newNode. Let's point it to the new newNode
         tail = newNode;
         System.out.println("From line 44 tail == " + tail);
     }
 
-    // public void addFirst(int data) {
-    //     Node newNode = new Node();
-    //     newNode.data = data;
-    //     if (head == null) {
-    //         head = newNode;
-    //         System.out.println("head == " + head);
-    //         tail = newNode;
-    //         System.out.println("tail == " + tail);
+    public void addFirst(int data) {
+        Node newNode = new Node();
+        newNode.data = data;
+        if (head == null) {
+            head = newNode;
+            System.out.println("head == " + head);
+            tail = newNode;
+            System.out.println("tail == " + tail);
 
-    //     } else {
-    //         Node temp = head;
-    //         head = newNode;
-    //         System.out.println("head == " + head);
+        } else {
+            Node temp = head;
+            head = newNode;
+            System.out.println("head == " + head);
 
-    //         head.next = temp;
-    //         System.out.println("head.next == " + head.next);
+            head.next = temp;
+            System.out.println("head.next == " + head.next);
 
-    //     }
+        }
 
-    // }
+    }
 
     public void print() {
         Node current = head;
