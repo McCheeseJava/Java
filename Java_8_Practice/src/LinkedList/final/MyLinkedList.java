@@ -1,8 +1,11 @@
 public class MyLinkedList {
+    //head can point to the address of a newNode
     private Node head;
+    //tail can point to the address of a newNode
     private Node tail;
 
     private class Node {
+        //head.next or tail.next points the current newNode to the address of the next newNode
         private Node next;
         private int data;
     }
