@@ -37,7 +37,7 @@ public class MyLinkedListDebug {
             System.out.println("From line 37 tail == " + tail);
         }
         System.out.println("From line 39 tail.next == " + tail.next);
-        //tail.next is pointing to null. Let's point it to our new node.
+        //tail is pointing to the previous newNode. tail.next is pointing to null. Let's point it to our new node.
         tail.next = newNode;
         System.out.println("From line 41 tail.next == " + tail.next);
 
