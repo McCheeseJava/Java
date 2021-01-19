@@ -57,13 +57,20 @@ public class MyLinkedListDebug {
             System.out.println("tail == " + tail);
 
         } else {
+            System.out.println("head from line 60 == " + head);
+            //preserve the address of the old head
             Node temp = head;
+            System.out.println("temp from line 63 == " + temp);
+
+            //head is pointing to the address of the old newNode that is the head now.
+            //point head to the address of the new newNode
             head = newNode;
-            System.out.println("head == " + head);
+            System.out.println("head from line 68 == " + head);
 
+            System.out.println("head.next from line 71 == " + head.next);
+            //head.next is pointing to null. Point it to the old head
             head.next = temp;
-            System.out.println("head.next == " + head.next);
-
+            System.out.println("head.next from line 74 == " + head.next);
         }
 
     }
@@ -84,7 +91,7 @@ public class MyLinkedListDebug {
         o.addLast(6);
         o.addLast(7);
         o.addLast(8);
-        //o.addFirst(9);
+        o.addFirst(9);
         o.print();
 
     }
