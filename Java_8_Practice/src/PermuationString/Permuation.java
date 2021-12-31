@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Permuation {
+public class Permutation {
 
     public boolean permutation (String a, String b){
         int length1 = a.length();
@@ -28,7 +28,7 @@ public class Permuation {
     public static void main(String[] args) {
         String myString  = args[0];
         String myString2 = args[1];
-        if (new Permuation().permutation(myString, myString2)){
+        if (new Permutation().permutation(myString, myString2)){
             System.out.println("true");
         }
         else {
