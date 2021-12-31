@@ -14,4 +14,5 @@ public interface FunctionalInterface<E> {
     public default void method6() {
         System.out.println("method2");
     }
+    public int divisorSum(int n);
 }
