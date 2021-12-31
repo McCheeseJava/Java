@@ -1,6 +1,6 @@
 class SuperClass {
     SuperClass(int x) {
-        System.out.println("Super");
+        System.out.println("Super " + x);
     }
 }
 
