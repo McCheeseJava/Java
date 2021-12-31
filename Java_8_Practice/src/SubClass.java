@@ -9,4 +9,7 @@ public class SubClass extends SuperClass {
         super(5);
         System.out.println("Sub 2");
     }
+    public static void main(String args[]){
+	new SubClass();
+    }
 }
